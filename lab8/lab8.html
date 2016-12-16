@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>
+Lab 8 CS 455
+</title
+</head>
+<body bgcolor="#FFFFFF">
+
+
+<center>
+
+<h2> CS 455 Lab 8: Java LinkedList class</h2>
+</center>
+
+<p align=right>
+Fall 2016 [Bono]<BR>
+</p>
+
+<hr>
+<h3> Goals and Background </h3>
+
+This lab consists of some problems for you to practice programming
+with the Java LinkedList class.  You will probably have to refer to
+the Java API documentation for LinkedList and ListIterator to complete
+the problems.  We have provided links directly to those pages below.
+<p>
+
+<h3> Advanced preparation </h3>
+
+There is more code to write in this lab than most, so you may want to
+spend some time before the lab preparing handwritten solutions to the
+problems, especially the last problem.
+<p>
+
+<h3>Reading and reference material</h3> 
+<ul> 
+<li> <a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html" target="_blank">Java API <kbd>LinkedList</kbd> documentation</a>
+
+<li> <a href="http://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html" target="_blank">Java API <kbd>ListIterator</kbd> documentation</a>
+
+<li> Horstmann, Section 15.2 Using Linked Lists
+
+<li> 10/11 CSCI455 Lecture on Java LinkedList class
+
+</ul>
+
+<p>
+
+<H3>Exercise 1 (1 checkoff point)</H3>
+
+Write a static method <kbd>printAlt</kbd> that prints every other element in a
+list, starting with the first one.  For example
+
+
+<pre>
+<strong>list</strong>          <strong>printAlt(list) output</strong>
+2 4 7           2 7
+2 4             2
+2 4 7 9 3 2     2 7 3
+2 4 7 9 3       2 7 3
+</pre>
+
+We have provided a test driver for your method that tests it on
+several hard-coded cases.  The test driver source file, <a
+href="PrintAltTester.java"><kbd>PrintAltTester.java</kbd></a>,
+contains the stub for the <kbd>printAlt</kbd> method.
+<p>
+
+<H3>Exercise 2 (1 checkoff point)</H3>
+
+Write a static method <kbd>after7</kbd> that removes all the values
+after the last 7 in a list.  Note: this problem is adapted from an
+array problem on the codingbat.com website.  Here are some examples
+
+<pre>
+<strong>list</strong>          <strong>list after call to after7(list)</strong>
+2 4 7                  2 4 7
+2 4                    2 4
+2 4 7 9 3 2            2 4 7
+2 4 7 9 7 3 7 1 2      2 4 7 9 7 3 7
+7 5 4                  7
+</pre>
+
+We have provided a test driver for your method that tests it on
+several hard-coded cases, and compares the actual results with the expected results.  The test driver source file, <a
+href="After7Tester.java"><kbd>After7Tester.java</kbd></a>,
+contains the stub for the <kbd>after7</kbd> method.
+<p>
+Hint: you can initialize an iterator positioned at the end of the list (i.e., after the last element) as follows:
+
+<pre>
+ListIterator&lt;Integer&gt; iter = list.listIterator(list.size());
+</pre>
+
+
+<H3>Exercise 3 (1 checkoff point)</H3>
+
+Write a static method <kbd>hasPeak</kbd> that returns true if its list
+argument has a single peak, and false otherwise.  This means that the
+sequence of values consists wholly of an increasing part followed by a
+decreasing part. You may assume no two consecutive values in the array
+are the same (i.e., no flat areas).
+
+<pre>
+<strong>list</strong>               <strong>hasPeak(list)</strong>
+2 4 7              false
+2 7 4              true
+7 4 2              false
+2 4                false
+2                  false
+2 4 7 9 3 2        true
+2 4 7 9 7 3 7 1    false
+7 5 4              false
+2 4 2 3            false 
+5 4 3              false 
+</pre>
+
+We have provided a test driver for your method that tests it on
+several hard-coded cases, and compares the actual results with the expected results.  The test driver source file, <a
+href="PeakTester.java"><kbd>PeakTester.java</kbd></a>,
+contains the stub for the <kbd>hasPeak</kbd> method.
+<p>
+
+<H3>Checkoff for DEN students</H3>
+<p>
+No README required for this lab.
+<p>
+The following command submits the necessary files:
+
+<pre>
+submit -user csci455 -tag lab8 PrintAltTester.java After7Tester.java PeakTester.java
+</pre>
+
+
+
+<hr>
+</html>

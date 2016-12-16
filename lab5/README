@@ -1,0 +1,3 @@
+3.
+for a non-zero poly, all the terms must be in decreasing order by exponent.
+exponent must be 0 or positive.

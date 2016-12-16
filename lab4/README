@@ -1,0 +1,48 @@
+1.1:
+Incremental Coding. Testing code by section is easier than debugging the whole code.
+
+2.1:
+nums.in: -17
+test1.in: 2
+test2.in: 100
+
+2.2:
+(2147483647)
+(2147483647 2147483648)
+
+3.1:
+nums.in:
+Values greater than 10: ()
+Values greater than 10: (17 17 21 18)
+Values greater than -20: (3 -7 10 17 9 -17 17 21 18 7)
+Values greater than -17: (3 -7 10 17 9 17 21 18 7)
+Values greater than 21: ()
+
+test1.in:
+Values greater than 10: ()
+Values greater than 10: ()
+Values greater than -20: all
+Values greater than -17: all
+Values greater than 21: ()
+
+test2.in:
+Values greater than 10: ()
+Values greater than 10: all
+Values greater than -20: all
+Values greater than -17: all
+Values greater than 21: all
+
+4.1:
+if(in.nextInt() != EOF)
+if(in.nextInt() != null)
+
+4.2:
+(nums.valuesGT(threshold)).printVals();
+
+4.3:
+type Nums
+
+4.4:
+Nums name = nums.valuesGT(threshold);
+name.printVals();
+

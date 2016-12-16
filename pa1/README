@@ -1,0 +1,52 @@
+Name: Zhaoyang Han
+USC loginid: zhaoyanh
+CSCI 455 PA1
+Fall 2016
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+ZH
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+Textbook: Big Java: Early Objects, 5th Edition - JFrame creation, Rectangle fill, JComponent extention
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+N/A
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+The bar width is not fixed for personal preferrence, even though I realize the assignment requirement says the opposite.
+People enlarge the windows size because they want to see staff more clearly. Fixed width seem to violate that intuition.
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+
+1. for a trails of 1000, 25% are two heads, 25% are two tails, and 50% are one head & one tail. One head & one tail always dominate because there are 2 heads, 2 tails, 1 head & 1 tail and 1 head & 1 tail possible outcomes, and one head & one tail has 2 instances.
+
+2. with only 1 trail, only one bar will get 100%, while others get 0. Or, when I try trails 2000000000, all possibilities are 0.
+
+3. When using 2500000000, the program crashes.
+
+
+
